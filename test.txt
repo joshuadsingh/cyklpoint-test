@@ -1,0 +1,20 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCKk1T4wxN0pLTmcde88u7JP3YK5ch-keo",
+    authDomain: "cyklepoint-test.firebaseapp.com",
+    databaseURL: "https://cyklepoint-test.firebaseio.com",
+    projectId: "cyklepoint-test",
+    storageBucket: "cyklepoint-test.appspot.com",
+    messagingSenderId: "543976046208",
+    appId: "1:543976046208:web:fa069716a2fd901661f065"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>

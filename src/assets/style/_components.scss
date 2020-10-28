@@ -1,0 +1,147 @@
+// Navbar
+.nav {
+    padding: 10px 0;
+    margin-bottom: 50px;
+
+    &-logo {
+        height: 45px;
+    }
+}
+
+.main-logo {
+    text-decoration: none;
+
+    &-title {
+        margin-left: 10px;
+    }
+}
+
+// Typeography
+
+.color-primary {
+    color: $primary;
+}
+
+// Button
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: lighten($primary, 10%);
+    transition: background-color 0.3s;
+    color: $white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: $primary;
+    }
+
+    &.btn-small {
+        padding: 5px 10px;
+    }
+}
+
+// Dashboard 
+
+.row {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+
+    &.row-alt {
+        grid-template-columns: 1fr 3fr;
+        border: none;
+        padding: 10px 0;
+    }
+
+    &.row-new {
+        grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr 30px;
+        }
+    }
+
+    &.row-head {
+        @media (max-width: 768px) {
+            font-size: 0.8em;
+        }
+
+        & > div {
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+    
+            svg {
+                height: 12px;
+                width: 12px;
+                fill: $font__color;
+                margin-left: 5px;
+
+                @media (max-width: 768px) {
+                    height: 8px;
+                width: 8px;
+                }
+            }
+        }
+    }
+}
+
+.list {
+    &-user {
+        font-size: 1.2em;
+        text-decoration: none;
+        padding: 5px 0;
+        position: relative;
+        color: $primary;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $primary;
+            transition: transform 0.3s;
+            transform-origin: 100% 50%;
+        }
+
+        &:hover {
+            &:after {
+                transform: scaleX(0.85);
+            }
+        }
+    }
+}
+
+.is-option {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+
+    &.edit-option {
+        right: 30px;
+    }
+}
+
+// Forms
+
+.create-user-form {
+    max-width: 800px;
+}
+
+input, select {
+    padding: 8px;
+    border: none;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+select {
+    cursor: pointer;
+}
+

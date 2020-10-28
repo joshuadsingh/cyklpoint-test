@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: $font__main;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $font__color;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+button,
+input, select  {
+    font-family: $font__main;
+}
+
+input::-webkit-outer-spin-button,
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+
+}
+
+input, select {
+    font-size: 0.9em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 15px;
+}
+
+.section-top-spacing {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.section-spacing {
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    @media (max-width: 768px) {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-flex-end {
+    justify-content: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.app-wrapper {
+    min-height: calc(100vh - 50px);
+}
+
+.bg-grey {
+    background: $secondary;
+}
+
+.bg-white {
+    background: $white;
+}
+
+.delete {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    color: $red;
+    position: relative;
+    padding: 5px 0;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $red;
+        transition: transform 0.3s;
+        transform-origin: 100% 50%;
+    }
+
+    &:hover {
+        &:after {
+            transform: scaleX(0.85);
+        }
+    }
+}
+
+.mob-to-column {
+    padding-bottom: 20px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.caption {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.page-num {
+    position: relative;
+
+    &:before, &:after {
+        content: "";
+        top: 55%;
+        left: -45px;
+        height: 1px;
+        width: 30px;
+        background: $primary;
+        position: absolute;
+        opacity: 0.4;
+    }
+
+    &:after {
+        left: auto;
+        right: -45px;
+    }
+}
