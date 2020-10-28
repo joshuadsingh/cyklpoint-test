@@ -5,7 +5,7 @@ import './assets/style/main.scss';
 function App() {
   return (
     <div className="App">
-      <div className="app-wrapper">
+      <div className="app-wrapper bg-grey">
         <Home />
       </div>
     </div>

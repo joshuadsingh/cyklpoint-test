@@ -98,7 +98,7 @@ export default () => {
 
     return (
         <>
-            <section className="section-top-spacing">
+            <section className="section-top-spacing bg-white">
                 <div className="container">
                     <h2 className="pb-10">Add your user</h2>
                     <form id="form-target" className="create-user-form" onSubmit={handleSubmit}>
@@ -135,7 +135,7 @@ export default () => {
                     </form>
                 </div>
             </section>
-            <section className="section-spacing bg-grey">
+            <section className="section-spacing ">
                 <div className="container">
                     <div className="d-flex justify-space-between align-items-center mob-to-column">
                         <h2>View users</h2>
